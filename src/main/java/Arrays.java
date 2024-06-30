@@ -4,9 +4,13 @@ public class Arrays {
 
         int[] ass2 = new int[20];
         setRandomValuesToArray (ass2);
-        getElementByIndex (ass2, 19);
-        getBiggestElement (ass2);
-        getSmallestElement (ass2);
+
+        System.out.println(getElementByIndex (ass2, 19));
+
+        System.out.println(getBiggestElement (ass2));
+
+        System.out.println(getSmallestElement (ass2));
+
         arraysConsoleOutput (ass2);
     }
 
@@ -26,7 +30,7 @@ public class Arrays {
         for (int i = 0; i < array.length; i++) {
             maxAt = array[i] > array[maxAt] ? i : maxAt;
         }
-        return maxAt;
+        return array[maxAt];
 
     }
 
@@ -35,7 +39,7 @@ public class Arrays {
         for (int i = 0; i < array.length; i++) {
         minAt = array[i] < array[minAt] ? i : minAt;
     }
-        return minAt;
+        return array[minAt];
 }
     public static void arraysConsoleOutput(int[] array){
         for (int i = 0; i < array.length ; i++) {
