@@ -51,14 +51,15 @@ public class Arrays {
         System.out.println();
     }
 
-    public static int linearSearch(int[] array, int elementToFind){
+    public static int linearSearch(int[] array, int elementToFind) {
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == elementToFind ){
+            if (array[i] == elementToFind) {
                 return i;
             }
         }
         return -1;
     }
+
     public static void permutationSort(int[] array) {
         for (int i = 0; i < array.length; i++) {
             int min = i;
