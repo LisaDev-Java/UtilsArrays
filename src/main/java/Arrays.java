@@ -8,17 +8,6 @@ public class Arrays {
         permutationSort(ass2);
         arraysConsoleOutput(ass2);
 
-//        System.out.println(getElementByIndex (ass2, 19)); //Выводи в консоль эллемент по индексу
-//
-//        System.out.println(getBiggestElement (ass2)); //Выводит самый большой эллемент
-//
-//        System.out.println(getSmallestElement (ass2)); //Выводит самый маленький эллемент
-//
-
-//
-//        System.out.println(searchLinear (ass2, 10));
-
-
     }
 
     public static int getElementByIndex(int[] array, int index) {
@@ -36,9 +25,15 @@ public class Arrays {
 
         for (int i = 0; i < array.length; i++) {
             maxAt = array[i] > array[maxAt] ? i : maxAt;
+
+            /*if (array[i] > array[maxAt]) {
+                maxAt = i;
+            } else {
+                maxAt = maxAt;
+            }*/
+
         }
         return array[maxAt];
-
     }
 
     public static int getSmallestElement(int[] array) {
@@ -56,16 +51,14 @@ public class Arrays {
         System.out.println();
     }
 
-    public static int searchLinear(int[] array, int elementToFind) {
+    public static int linearSearch(int[] array, int elementToFind){
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == elementToFind) {
+            if (array[i] == elementToFind ){
                 return i;
             }
-
         }
         return -1;
     }
-
     public static void permutationSort(int[] array) {
         for (int i = 0; i < array.length; i++) {
             int min = i;
@@ -80,5 +73,3 @@ public class Arrays {
         }
     }
 }
-
-
